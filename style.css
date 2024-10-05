@@ -1,0 +1,16 @@
+.hero {
+    background-image: url('assets/00.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+}
+
+.about img {
+    border-radius: 10px;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
