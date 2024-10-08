@@ -223,7 +223,6 @@
         <div class="container text-center">
             <h2>Pricing</h2>
             <div class="row mt-4">
-                <!-- Pricing Option 1 -->
                 <div class="col-lg-4">
                     <div class="card">
                         <div class="card-header bg-dark text-white">
@@ -232,12 +231,11 @@
                         <div class="card-body">
                             <h3>₱2,899.42 <small class="text-muted">/ unit</small></h3>
                             <p><del>₱3,479.42</del> 15% off for first-time buyers!</p>
-                            <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modal1">Buy Now</button>
+                            <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#purchaseModal">Buy Now</button>
                         </div>
                     </div>
                 </div>
     
-                <!-- Pricing Option 2 -->
                 <div class="col-lg-4">
                     <div class="card">
                         <div class="card-header bg-dark text-white">
@@ -246,12 +244,11 @@
                         <div class="card-body">
                             <h3>₱5,219.42 <small class="text-muted">/ unit</small></h3>
                             <p><del>₱6,379.42</del> 20% off for bulk orders!</p>
-                            <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modal2">Buy Now</button>
+                            <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#purchaseModal">Buy Now</button>
                         </div>
                     </div>
                 </div>
     
-                <!-- Pricing Option 3 -->
                 <div class="col-lg-4">
                     <div class="card">
                         <div class="card-header bg-dark text-white">
@@ -260,7 +257,7 @@
                         <div class="card-body">
                             <h3>₱8,689.42 <small class="text-muted">/ unit</small></h3>
                             <p><del>₱10,439.42</del> 25% off for long-term customers!</p>
-                            <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modal3">Buy Now</button>
+                            <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#purchaseModal">Buy Now</button>
                         </div>
                     </div>
                 </div>
@@ -268,78 +265,77 @@
         </div>
     </section>
     
-    <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modalLabel1" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modalLabel1">Purchase Modern Ribbed Storage Cabinet</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>Are you sure you want to purchase the Modern Ribbed Storage Cabinet for ₱2,899.42?</p>
-                    <div class="d-flex justify-content-between">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                        <button type="button" class="btn btn-primary">Confirm Purchase</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     
-    <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modalLabel2" aria-hidden="true">
+    <div class="modal fade" id="purchaseModal" tabindex="-1" aria-labelledby="purchaseModalLabel" aria-hidden="true">
         <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modalLabel2">Purchase Sleek White Drawer Cabinet</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>Are you sure you want to purchase the Sleek White Drawer Cabinet for ₱5,219.42?</p>
-                    <div class="d-flex justify-content-between">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                        <button type="button" class="btn btn-primary">Confirm Purchase</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modalLabel3" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modalLabel3">Purchase Modular Cube Storage Cabinet</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>Are you sure you want to purchase the Modular Cube Storage Cabinet for ₱8,689.42?</p>
-                    <div class="d-flex justify-content-between">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                        <button type="button" class="btn btn-primary">Confirm Purchase</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-
-<div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modalLabel3" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
+          <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="modalLabel3">Purchase Modular Cube Storage Cabinet</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <h5 class="modal-title" id="purchaseModalLabel">Purchase Information</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <p>Are you sure you want to purchase the Modular Cube Storage Cabinet for $149.99?</p>
-                <div class="d-flex justify-content-between">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                    <button type="button" class="btn btn-primary">Confirm Purchase</button>
+              <form id="purchaseForm">
+                <div class="form-group">
+                  <label for="firstName">First Name</label>
+                  <input type="text" class="form-control" id="firstName" required>
                 </div>
+                <div class="form-group">
+                  <label for="lastName">Last Name</label>
+                  <input type="text" class="form-control" id="lastName" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="form-group">
+                  <label for="shippingAddress">Shipping Address</label>
+                  <input type="text" class="form-control" id="shippingAddress" required>
+                </div>
+                <input type="hidden" id="productName">
+                <input type="hidden" id="productPrice">
+              </form>
             </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-primary" id="proceedBtn">Proceed to Buy</button>
+            </div>
+          </div>
         </div>
-    </div>
-</div>
+      </div>
+
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          document.querySelectorAll('.btn-dark').forEach(function (button) {
+            button.addEventListener('click', function () {
+              const productTitle = this.closest('.card').querySelector('.card-header h4').innerText;
+              const productPrice = this.closest('.card').querySelector('.card-body h3').innerText;
+              
+              document.getElementById('productName').value = productTitle;
+              document.getElementById('productPrice').value = productPrice;
+              
+              document.getElementById('purchaseModalLabel').innerText = `Purchase ${productTitle}`;
+            });
+          });
+      
+          document.getElementById('proceedBtn').addEventListener('click', function () {
+            const firstName = document.getElementById('firstName').value;
+            const lastName = document.getElementById('lastName').value;
+            const email = document.getElementById('email').value;
+            const shippingAddress = document.getElementById('shippingAddress').value;
+            const productName = document.getElementById('productName').value;
+            const productPrice = document.getElementById('productPrice').value;
+      
+            if (firstName && lastName && email && shippingAddress) {
+              alert(`Thank you ${firstName} ${lastName}! You've purchased ${productName} for ${productPrice}. We will ship it to ${shippingAddress}.`);
+              
+              document.getElementById('purchaseForm').reset();
+            } else {
+              alert('Please fill out all fields!');
+            }
+          });
+        });
+      </script>
+      
 
 
     <section id="purchase" class="py-5 bg-secondary text-white text-center">
