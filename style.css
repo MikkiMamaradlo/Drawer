@@ -1,3 +1,19 @@
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #333;
+    color: #fff;
+    border-color: #333;
+    transform: scale(1.05);
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+
 .hero {
     background-image: url('assets/00.png');
     background-size: cover;
@@ -42,6 +58,7 @@ footer {
   .btn {
     width: 20%;
   }
+
 
 
   .testimonials-section {
@@ -93,3 +110,231 @@ footer {
     width: 100%;
     padding: 12px 0;
 }
+
+.flip-card {
+    perspective: 1000px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; 
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    transition: transform 1.0s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    border-radius: 10px; 
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px; 
+  }
+  
+  .flip-card-front {
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px; 
+  }
+  
+  .flip-card-back {
+    background-color: #fff;
+    color: #333;
+    transform: rotateY(180deg);
+    border-radius: 10px; 
+  }
+  
+  .testimonial-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+  }
+  
+  .whitebox {
+    position: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .testimonial-name {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .testimonial-quote {
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 20px;
+  }
+  
+  .list-unstyled {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .list-unstyled li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+
+.hoverable-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.hoverable-card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2); 
+}
+
+.hoverable-card img {
+    transition: transform 0.3s ease;
+}
+
+.hoverable-card:hover img {
+    transform: scale(1.05); 
+}
+
+
+.card-body {
+    transition: background-color 0.3s ease;
+}
+
+.hoverable-card:hover .card-body {
+    background-color: #f8f9fa; 
+}
+
+
+.hoverable-card:hover .card-title {
+    color: #007bff; 
+}
+
+.hoverable-card:hover .card-text {
+    color: #555; 
+}
+
+
+.modal .btn-primary {
+    background-color: black;
+    border-color: gray;
+}
+
+.modal .btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.modal-body p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+
+
+#contacts {
+    background-color: #f8f9fa;
+    padding: 3rem 0;
+}
+
+#contacts .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#contacts h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+#contacts p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+/* Form styling */
+#contacts .form-label {
+    font-weight: bold;
+    color: #333;
+}
+
+#contacts .form-control {
+    border-radius: 0.5rem;
+    border: 1px solid #ced4da;
+    padding: 0.75rem;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+#contacts .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+#contacts button[type="submit"] {
+    background-color: black;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+#contacts button[type="submit"]:hover {
+    background-color: gray;
+}
+
+/* Contact details styling */
+#contacts .col-lg-6 {
+    margin-bottom: 2rem;
+}
+
+#contacts a {
+    color: black;
+    text-decoration: none;
+}
+
+#contacts a:hover {
+    text-decoration: underline;
+}
+
+#contacts .ratio iframe {
+    border-radius: 0.5rem;
+    border: 1px solid #ced4da;
+}
+
+/* Contact us */
+.second {
+    margin: 0 auto; 
+    width: 100%; 
+    max-width: 80%; 
+    padding: 20px; 
+    height: auto;  
+  }
+  
+  iframe.location {
+    width: 100%;
+    height: 345px; 
+    border: none;
+  }
+  
