@@ -19,32 +19,38 @@
 
 <body>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">My Business</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#features">Features</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#products">Products</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                </ul>
-            </div>
+ <!-- Navbar -->
+ <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">My Business</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#features">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#products">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacts">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About Us</a>
+                </li>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
+
 
     <!-- Hero Section -->
     <section id="home"class="hero bg-primary text-white text-center py-5">
@@ -55,7 +61,7 @@
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- Product Features -->
     <section id="features" class="about py-5">
         <div class="container">
             <div class="row">
@@ -109,19 +115,191 @@
     </div>
 </section>
 
-    <!-- About Section -->
-    <section id="about" class="about py-5 text-center py-4">
-        <div class="container">
-                    <h2>About Us</h2>
-                    <p>We are a leading provider of innovative products and services in the market. Our mission is to bring high-quality solutions to our customers while maintaining a strong commitment to excellence.</p>
+<!-- Testimonials Section -->
+<section class="testimonials-section py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">What Our Customers Say</h2>
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Testimonial 1 -->
+                <div class="carousel-item active">
+                    <div class="testimonial text-center">
+                        <p class="lead">"This product changed my life! The quality and service are outstanding. Highly recommend to everyone!"</p>
+                        <h5>- Sarah J.</h5>
+                    </div>
                 </div>
-    </section>
+                <!-- Testimonial 2 -->
+                <div class="carousel-item">
+                    <div class="testimonial text-center">
+                        <p class="lead">"Amazing experience! The product was exactly as described, and the customer service was excellent."</p>
+                        <h5>- John D.</h5>
+                    </div>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="carousel-item">
+                    <div class="testimonial text-center">
+                        <p class="lead">"I love this product! It's been a game-changer for me. Definitely worth the investment."</p>
+                        <h5>- Emma W.</h5>
+                    </div>
+                </div>
+                <!-- Testimonial 4 -->
+                <div class="carousel-item">
+                    <div class="testimonial text-center">
+                        <p class="lead">"Great value for the price! I'm extremely satisfied with my purchase and will buy again."</p>
+                        <h5>- Michael T.</h5>
+                    </div>
+                </div>
+                <!-- Testimonial 5 -->
+                <div class="carousel-item">
+                    <div class="testimonial text-center">
+                        <p class="lead">"The best customer experience I've ever had! Fantastic product with great support."</p>
+                        <h5>- Olivia R.</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- Pricing Section -->
+<section class="pricing-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Our Drawer Storage Solutions</h2>
+        <div class="row text-center">
+            <!-- Small Drawer Plan -->
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-header bg-dark text-white">
+                        <h4 class="my-0">Small Drawer</h4>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title pricing-card-title">$49.99 <small class="text-muted">/ unit</small></h3>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>Holds up to 50 items</li>
+                            <li>3 Compartments</li>
+                            <li>Compact & Lightweight</li>
+                            <li>Available in 3 colors</li>
+                        </ul>
+                        <a href="#" class="btn btn-dark btn-block">Buy Now</a>
+                        <!-- Discount Label -->
+                        <p class="mt-3 text-muted"><del>$59.99</del> <strong>15% OFF</strong> for first-time buyers!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Medium Drawer Plan -->
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-header bg-dark text-white">
+                        <h4 class="my-0">Medium Drawer</h4>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title pricing-card-title">$89.99 <small class="text-muted">/ unit</small></h3>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>Holds up to 100 items</li>
+                            <li>5 Compartments</li>
+                            <li>Sturdy Design</li>
+                            <li>Available in 5 colors</li>
+                        </ul>
+                        <a href="#" class="btn btn-dark btn-block">Get Yours</a>
+                        <!-- Discount Label -->
+                        <p class="mt-3 text-muted"><del>$109.99</del> <strong>20% OFF</strong> on bulk orders (3+ units)!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Large Drawer Plan -->
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-header bg-dark text-white">
+                        <h4 class="my-0">Large Drawer</h4>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title pricing-card-title">$149.99 <small class="text-muted">/ unit</small></h3>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>Holds up to 200 items</li>
+                            <li>7 Compartments</li>
+                            <li>Premium Build Quality</li>
+                            <li>Available in 7 colors</li>
+                        </ul>
+                        <a href="#" class="btn btn-dark btn-block">Order Now</a>
+                        <!-- Discount Label -->
+                        <p class="mt-3 text-muted"><del>$179.99</del> <strong>25% OFF</strong> for long-term customers!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Us Section -->
+<section id="contacts" class="p-5">
+    <div class="container">
+        <h2 class="text-center fw-bold">Contact Us</h2>
+        <div class="row">
+            <!-- Contact Form -->
+            <div class="col-lg-6 col-md-12 mb-4">
+                <form>
+                    <!-- First Name Field -->
+                    <div class="mb-3">
+                        <label for="firstName" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="Your Name" aria-label="First Name" required>
+                    </div>
+                    <!-- Email Field -->
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Email Address" aria-label="Email Address" required>
+                    </div>
+                    <!-- Message Field -->
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="5" placeholder="Your Message" aria-label="Your Message" required></textarea>
+                    </div>
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                </form>
+            </div>
+            
+            <!-- Contact Details -->
+            <div class="col-lg-6 col-md-12">
+                <h3 class="mb-4">Visit Us</h3>
+                <!-- Address -->
+                <p><i class="bi bi-geo-alt-fill me-2"></i><strong>Address:</strong> 123 Business Street, City, Country</p>
+                <!-- Email -->
+                <p><i class="bi bi-envelope-fill me-2"></i><strong>Email:</strong> <a href="mailto:contact@business.com" class="text-decoration-none">contact@business.com</a></p>
+                <!-- Phone -->
+                <p><i class="bi bi-telephone-fill me-2"></i><strong>Phone:</strong> <a href="tel:1234567890" class="text-decoration-none">(123) 456-7890</a></p>
+
+                <!-- Google Maps Embed (Optional) -->
+                <div class="ratio ratio-16x9 mt-4">
+                    <iframe src="https://www.google.com/maps/embed?pb=YOUR_GOOGLE_MAPS_EMBED_LINK" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-4">
+    <section id="about" class="p-5">
+        <h2>About Us</h2>
+        <p>We are a leading provider of innovative products and services in the market. Our mission is to bring high-quality solutions to our customers while maintaining a strong commitment to excellence.</p>
+    </div>
+    </section>
         <div class="container">
             <p>&copy; 2024 My Business. All Rights Reserved.</p>
         </div>
+        <div class="container">
     </footer>
 
     <!-- Bootstrap JS -->
